@@ -9,7 +9,7 @@ const config = {
   title: 'Resonate Documentation',
   tagline: 'Documentation for the tech behind the co-operative music streaming service',
   url: 'https://resonate.coop',
-  baseUrl: '/docs/',
+  baseUrl: '/documentation/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'resonatecoop', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'documentation', // Usually your repo name.
   deploymentBranch: 'gh-pages', // GitHub Pages requires this to be explicit as a config field or environment variable.
   trailingSlash: false, // GitHub Pages adds a trailing slash to Docusaurus URLs by default.
                         // It is recommended to set a trailingSlash config(true or false, not undefined).
@@ -143,6 +143,30 @@ sidebar_position: 5
 ---
 
 Explore the goswagger.io generated client for <code>user-api</code>, the <code>[user-api-client](https://github.com/resonatecoop/user-api-client)</code> repository...
+
+${content}`,
+              }
+            }
+            return undefined
+          },
+        },
+    ],
+    [
+        "docusaurus-plugin-remote-content",
+        {
+          name: "verifiable-credentials",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/verifiable-credentials/master/",
+          outDir: "docs/basics",
+          documents: ["readme.md"],
+          modifyContent(filename, content) {
+            if (filename.includes("readme")) {
+              return {
+                filename: "verifiable-credentials.md",
+                content: `---
+sidebar_position: 6
+---
+
+Explore the Verifiable Credentials Reference Implementation in the <code>[verifiable-credentials](https://github.com/resonatecoop/verifiable-credentials)</code> repository...
 
 ${content}`,
               }
