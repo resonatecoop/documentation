@@ -44,6 +44,7 @@ const config = {
                 filename: "stream.md",
                 content: `---
 sidebar_position: 1
+title: Stream
 ---
 
 Explore the monorepo for the web player, the <code>[stream](https://github.com/resonatecoop/stream)</code> repository...
@@ -68,6 +69,7 @@ ${content.replace('<!-- Standard -->', '').replace('stream2own', '')}`,
                 filename: "website.md",
                 content: `---
 sidebar_position: 2
+title: Website
 ---
 
 Explore the Resonate <code>[website](https://github.com/resonatecoop/website)</code> repository...
@@ -92,6 +94,7 @@ ${content}`,
                 filename: "id.md",
                 content: `---
 sidebar_position: 3
+title: ID Server
 ---
 
 Explore the <code>[id](https://github.com/resonatecoop/id)</code> server repository...
@@ -116,6 +119,7 @@ ${content}`,
                   filename: "user-api.md",
                   content: `---
 sidebar_position: 4
+title: User API
 ---
 
 Explore the Golang-based <code>[user-api](https://github.com/resonatecoop/user-api)</code> repository...
@@ -140,6 +144,7 @@ ${content}`,
                   filename: "user-api-client.md",
                   content: `---
 sidebar_position: 5
+title: User API Client
 ---
 
 Explore the goswagger.io generated client for <code>user-api</code>, the <code>[user-api-client](https://github.com/resonatecoop/user-api-client)</code> repository...
@@ -164,6 +169,7 @@ ${content}`,
                 filename: "verifiable-credentials.md",
                 content: `---
 sidebar_position: 6
+title: Verifiable Credentials
 ---
 
 Explore the Verifiable Credentials Reference Implementation in the <code>[verifiable-credentials](https://github.com/resonatecoop/verifiable-credentials)</code> repository...
@@ -188,6 +194,7 @@ ${content}`,
                   filename: "beam.md",
                   content: `---
 sidebar_position: 1
+title: Beam
 ---
 
 Explore the <code>[beam](https://github.com/simonv3/beam)</code> desktop app repository...
@@ -212,6 +219,7 @@ ${content}`,
                 filename: "stream-app.md",
                 content: `---
 sidebar_position: 2
+title: Stream App
 ---
 
 Explore the mobile & tablet <code>[stream-app](https://github.com/peterklingelhofer/stream-app)</code> repository...
