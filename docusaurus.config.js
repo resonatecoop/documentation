@@ -9,7 +9,7 @@ const config = {
   title: 'Resonate Documentation',
   tagline: 'Documentation for the tech behind the co-operative music streaming service',
   url: 'https://resonate.coop',
-  baseUrl: '/documentation/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -232,7 +232,7 @@ ${content}`,
         },
       ],
   ],
-  
+
   presets: [
     [
       'classic',
