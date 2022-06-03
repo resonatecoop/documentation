@@ -286,6 +286,11 @@ ${content}`,
             position: 'right',
           },
           {
+            href: 'https://api.resonate.ninja',
+            label: 'User API',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/resonatecoop',
             label: 'GitHub',
             position: 'right',
@@ -343,6 +348,10 @@ ${content}`,
               {
                 label: 'API 2.0',
                 href: 'https://api.resonate.coop/v2/docs',
+              },
+              {
+                label: 'User API',
+                href: 'https://api.resonate.ninja',
               },
               {
                 label: 'GitHub',
