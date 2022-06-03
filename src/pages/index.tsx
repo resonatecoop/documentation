@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={siteConfig.title}
-      description="Documentation for the tech behind the co-operative music streaming service">
+      description="Documenting the tech behind the co-operative music streaming service">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
