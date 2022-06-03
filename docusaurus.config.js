@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Resonate Documentation',
-  tagline: 'Documentation for the tech behind the co-operative music streaming service',
+  tagline: 'Documenting the tech behind the co-operative music streaming service',
   url: 'https://resonate.coop',
   baseUrl: '/',
   onBrokenLinks: 'warn',
