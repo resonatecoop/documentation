@@ -1,3 +1,13 @@
+# Remote repositories
+/docs/basics/id.md
+/docs/basics/stream.md
+/docs/basics/user-api-client.md
+/docs/basics/user-api.md
+/docs/basics/verifiable-credentials.md
+/docs/basics/website.md
+/docs/ecosystem/beam.md
+/docs/ecosystem/stream-app.md
+
 # Dependencies
 /node_modules
 
