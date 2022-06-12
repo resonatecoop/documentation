@@ -5,6 +5,10 @@
 /docs/basics/user-api.md
 /docs/basics/verifiable-credentials.md
 /docs/basics/website.md
+/docs/basics/search.md
+/docs/basics/upload.md
+/docs/basics/audio-process-queue.md
+/docs/basics/image-process-queue.md
 /docs/ecosystem/beam.md
 /docs/ecosystem/stream-app.md
 

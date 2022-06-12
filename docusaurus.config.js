@@ -184,6 +184,106 @@ ${content}`,
     [
         "docusaurus-plugin-remote-content",
         {
+          name: "search",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/search/development/",
+          outDir: "docs/basics",
+          documents: ["README.md"],
+          modifyContent(filename, content) {
+            if (filename.includes("README")) {
+              return {
+                filename: "search.md",
+                content: `---
+sidebar_position: 7
+title: Search
+---
+
+Explore the <code>[search](https://github.com/resonatecoop/search)</code> repository...
+
+${content.replace('## UI Design', '').replace('![alt text](./search.png "Search Figma Design")', '')}`,
+              }
+            }
+            return undefined
+          },
+        },
+    ],
+    [
+        "docusaurus-plugin-remote-content",
+        {
+          name: "upload",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/upload/main/",
+          outDir: "docs/basics",
+          documents: ["README.md"],
+          modifyContent(filename, content) {
+            if (filename.includes("README")) {
+              return {
+                filename: "upload.md",
+                content: `---
+sidebar_position: 8
+title: Upload
+---
+
+Explore the <code>[upload](https://github.com/resonatecoop/upload)</code> repository...
+
+${content}`,
+              }
+            }
+            return undefined
+          },
+        },
+    ],
+    [
+        "docusaurus-plugin-remote-content",
+        {
+          name: "audio-process-queue",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/audio-process-queue/main/",
+          outDir: "docs/basics",
+          documents: ["README.md"],
+          modifyContent(filename, content) {
+            if (filename.includes("README")) {
+              return {
+                filename: "audio-process-queue.md",
+                content: `---
+sidebar_position: 9
+title: Audio Process Queue
+---
+
+Explore the <code>[audio-process-queue](https://github.com/resonatecoop/audio-process-queue)</code> repository...
+
+${content}`,
+              }
+            }
+            return undefined
+          },
+        },
+    ],
+    [
+        "docusaurus-plugin-remote-content",
+        {
+          name: "image-process-queue",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/image-process-queue/main/",
+          outDir: "docs/basics",
+          documents: ["README.md"],
+          modifyContent(filename, content) {
+            if (filename.includes("README")) {
+              return {
+                filename: "image-process-queue.md",
+                content: `---
+sidebar_position: 10
+title: Image Process Queue
+---
+
+Explore the <code>[image-process-queue](https://github.com/resonatecoop/image-process-queue)</code> repository...
+
+${content}`,
+              }
+            }
+            return undefined
+          },
+        },
+    ],
+    [
+        "docusaurus-plugin-remote-content",
+        {
           name: "beam",
           sourceBaseUrl: "https://raw.githubusercontent.com/simonv3/beam/main/",
           outDir: "docs/ecosystem",
