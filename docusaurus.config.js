@@ -424,6 +424,26 @@ ${content}`,
             ],
           },
           {
+            title: 'API',
+            items: [
+              {
+                label: 'API 3.0',
+                href: 'https://api.resonate.coop/v3/docs',
+                'aria-label': 'API version 3.0 documentation',
+              },
+              {
+                label: 'API 2.0',
+                href: 'https://api.resonate.coop/v2/docs',
+                'aria-label': 'API version 2.0 documentation',
+              },
+              {
+                label: 'User API',
+                href: 'https://api.resonate.ninja',
+                'aria-label': 'User API documentation',
+              },
+            ],
+          },
+          {
             title: 'Community',
             items: [
               {
@@ -445,26 +465,6 @@ ${content}`,
                 label: 'Twitter',
                 href: 'https://twitter.com/resonatecoop',
                 'aria-label': `View Resonate's Twitter`,
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'API 3.0',
-                href: 'https://api.resonate.coop/v3/docs',
-                'aria-label': 'API version 3.0 documentation',
-              },
-              {
-                label: 'API 2.0',
-                href: 'https://api.resonate.coop/v2/docs',
-                'aria-label': 'API version 2.0 documentation',
-              },
-              {
-                label: 'User API',
-                href: 'https://api.resonate.ninja',
-                'aria-label': 'User API documentation',
               },
             ],
           },
