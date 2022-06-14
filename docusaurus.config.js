@@ -342,13 +342,44 @@ ${content}`,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/resonatecoop/docs/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: ({ docPath }) => {
+            switch (true) {
+              case docPath.includes('stream'):
+                return 'https://github.com/resonatecoop/stream/edit/development/README.md';
+              case docPath.includes('website'):
+                return 'https://github.com/resonatecoop/website/edit/develop/README.md';
+              case docPath.includes('id'):
+                return 'https://github.com/resonatecoop/id/edit/develop/README.md';
+              case docPath.includes('user-api'):
+                return 'https://github.com/resonatecoop/user-api/edit/master/README.md';
+              case docPath.includes('user-api-client'):
+                return 'https://github.com/resonatecoop/user-api-client/edit/master/README.md';
+              case docPath.includes('verifiable-credentials'):
+                return 'https://github.com/resonatecoop/verifiable-credentials/edit/master/readme.md';
+              case docPath.includes('search'):
+                return 'https://github.com/resonatecoop/search/edit/development/README.md';
+              case docPath.includes('upload'):
+                return 'https://github.com/resonatecoop/upload/edit/main/README.md';
+              case docPath.includes('audio-process-queue'):
+                return 'https://github.com/resonatecoop/audio-process-queue/edit/main/README.md';
+              case docPath.includes('image-process-queue'):
+                return 'https://github.com/resonatecoop/image-process-queue/edit/main/README.md';
+              case docPath.includes('beam'):
+                return 'https://github.com/simonv3/beam/edit/main/README.md';
+              case docPath.includes('stream-app'):
+                return 'https://github.com/peterklingelhofer/beam/edit/stream-app/README.md';
+              default:
+                return `https://github.com/resonatecoop/documentation/edit/main/docs/${docPath}`;
+            }
+          },
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/resonatecoop/docs/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/resonatecoop/documentation/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
