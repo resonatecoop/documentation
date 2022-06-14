@@ -42,4 +42,4 @@ Run the development server:
 npm run dev
 ```
 
-The `npm run dev` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:8080/.
+The `npm run dev` command builds your website locally and serves it through a development server, ready for you to view at [localhost:8080](http://localhost:8080).
