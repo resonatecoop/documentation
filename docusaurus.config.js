@@ -391,9 +391,6 @@ ${content}`,
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
       navbar: {
         title: 'Resonate Docs',
         logo: {
@@ -501,6 +498,16 @@ ${content}`,
           },
         ],
         copyright: `Copyright © 2015 - ${new Date().getFullYear()} Resonate.`,
+      },
+      algolia: {
+        appId: 'MVYIGUGQFL', // The application ID provided by Algolia
+        apiKey: '046118e383b3a7dbd6e9dfeb7c9dca1a', // Public API key: it is safe to commit it
+        indexName: 'resonate', // The index name provided by Algolia
+        contextualSearch: true,
+        searchPagePath: 'search', // Optional: path for search page that enabled by default (`false` to disable it)
+      },
+      colorMode: {
+        respectPrefersColorScheme: true,
       },
       prism: {
         theme: lightCodeTheme,
