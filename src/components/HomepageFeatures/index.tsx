@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/Happy_musician.svg').default,
     description: (
       <>
-        Resonate Docs was designed to facilitate getting our development environment
+        Designed to facilitate getting Resonate's development environment
         up and running quickly and without difficulty.
       </>
     ),
