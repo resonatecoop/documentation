@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/Resonate_Ear.svg').default,
+    Svg: require('@site/static/img/Resonate_ear.svg').default,
     description: (
       <>
         Save time by avoiding hunting for information in multiple places and use what
