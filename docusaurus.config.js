@@ -93,7 +93,7 @@ ${content}`,
               return {
                 filename: "id.md",
                 content: `---
-sidebar_position: 3
+sidebar_position: 4
 title: ID Server
 ---
 
@@ -118,7 +118,7 @@ ${content}`,
               return {
                   filename: "user-api.md",
                   content: `---
-sidebar_position: 4
+sidebar_position: 5
 title: User API
 ---
 
@@ -143,7 +143,7 @@ ${content}`,
               return {
                   filename: "user-api-client.md",
                   content: `---
-sidebar_position: 5
+sidebar_position: 6
 title: User API Client
 ---
 
@@ -168,7 +168,7 @@ ${content}`,
               return {
                 filename: "verifiable-credentials.md",
                 content: `---
-sidebar_position: 6
+sidebar_position: 7
 title: Verifiable Credentials
 ---
 
@@ -193,7 +193,7 @@ ${content}`,
               return {
                 filename: "search.md",
                 content: `---
-sidebar_position: 7
+sidebar_position: 8
 title: Search
 ---
 
@@ -218,7 +218,7 @@ ${content.replace('## UI Design', '').replace('![alt text](./search.png "Search 
               return {
                 filename: "upload.md",
                 content: `---
-sidebar_position: 8
+sidebar_position: 9
 title: Upload
 ---
 
@@ -243,7 +243,7 @@ ${content}`,
               return {
                 filename: "audio-process-queue.md",
                 content: `---
-sidebar_position: 9
+sidebar_position: 10
 title: Audio Process Queue
 ---
 
@@ -268,7 +268,7 @@ ${content}`,
               return {
                 filename: "image-process-queue.md",
                 content: `---
-sidebar_position: 10
+sidebar_position: 11
 title: Image Process Queue
 ---
 
