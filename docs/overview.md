@@ -8,13 +8,13 @@ A high level overview of the Resonate tech stack.
 
 > Note: this is an "ideal" version of the stack. See the section "caveats" at the bottom for more explanation.
 
-**Resonate ID Server** - a golang server that acts as our "authentication" portal. It's primarily used to provide login and authentication for client apps, which includes the stream app (though this version isn't live for Resonate yet), the dashboard, and, for example beam, which is a third party app.
+**[Resonate ID Server](https://github.com/resonatecoop/id)** - a golang server that acts as our "authentication" portal. It's primarily used to provide login and authentication for client apps, which includes the `stream` app (though this version isn't live for Resonate yet), the `dashboard`, and, for example `beam`, which is a third party app.
 
-**Resonate User API** - this is primarily a database that stores all the user information and has some user management methods and functionality associated with it. It also is a golang server.
+**[Resonate User API](https://github.com/resonatecoop/user-api)** - this is primarily a database that stores all the user information and has some user management methods and functionality associated with it. It also is a golang server.
 
-**Tracks API** - a thin nodejs sequelize API that provides access to the tracks database, serving streaming information, etc.
+**[Tracks API](https://github.com/resonatecoop/tracks-api)** - a thin nodejs sequelize API that provides access to the tracks database, serving streaming information, etc.
 
-**Stream & Dashboard** - These are two different webapps. The stream app is a choo based javascript app that allows streaming, while the dashboard app allows track management and upload. The dashboard API also contains some code that is partially duplicated with tracks-api mentioned above, so there are plans to merge those.
+**[Stream](https://github.com/resonatecoop/stream) & [Dashboard](https://github.com/resonatecoop/dashboard)** - These are two different webapps. The `stream` app is a choo based javascript app that allows streaming, while the `dashboard` app allows track management and upload. The `dashboard` API also contains some code that is partially duplicated with `tracks-api` mentioned above, so there are plans to merge those.
 
 There are also some smaller services that handle uploading of files (audio and images) and some other things as well.
 
