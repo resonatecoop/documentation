@@ -309,6 +309,30 @@ ${content}`,
     [
         "docusaurus-plugin-remote-content",
         {
+          name: "dream",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/dream/main/",
+          outDir: "docs/ecosystem",
+          documents: ["README.md"],
+          modifyContent(filename, content) {
+            if (filename.includes("README")) {
+              return {
+                filename: "dream.md",
+                content: `---
+sidebar_position: 2
+title: Dream
+---
+
+Explore the mobile & tablet <code>[dream](https://github.com/resonatecoop/dream)</code> repository...
+${content}`,
+              }
+            }
+            return undefined
+          },
+        },
+      ],
+    [
+        "docusaurus-plugin-remote-content",
+        {
           name: "stream-app",
           sourceBaseUrl: "https://raw.githubusercontent.com/peterklingelhofer/stream-app/main/",
           outDir: "docs/ecosystem",
@@ -318,8 +342,8 @@ ${content}`,
               return {
                 filename: "stream-app.md",
                 content: `---
-sidebar_position: 2
-title: Stream App
+sidebar_position: 3
+title: Stream App (Deprecated)
 ---
 
 Explore the mobile & tablet <code>[stream-app](https://github.com/peterklingelhofer/stream-app)</code> repository...
