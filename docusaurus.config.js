@@ -309,20 +309,20 @@ ${content}`,
     [
         "docusaurus-plugin-remote-content",
         {
-          name: "dream",
-          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/dream/main/",
+          name: "mobile",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/mobile/main/",
           outDir: "docs/ecosystem",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
               return {
-                filename: "dream.md",
+                filename: "mobile.md",
                 content: `---
 sidebar_position: 2
-title: Dream
+title: Mobile
 ---
 
-Explore the mobile & tablet <code>[dream](https://github.com/resonatecoop/dream)</code> repository...
+Explore the mobile & tablet <code>[mobile](https://github.com/resonatecoop/mobile)</code> repository...
 ${content}`,
               }
             }
