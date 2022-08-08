@@ -343,10 +343,10 @@ ${content}`,
                 filename: "stream-app.md",
                 content: `---
 sidebar_position: 3
-title: Stream App (Maintenance Mode)
+title: Stream App
 ---
 
-Explore the mobile & tablet <code>[stream-app](https://github.com/peterklingelhofer/stream-app)</code> repository...
+[[Maintenance Mode] Explore the mobile & tablet <code>[stream-app](https://github.com/peterklingelhofer/stream-app)</code> repository...
 
 ${content}`,
               }
