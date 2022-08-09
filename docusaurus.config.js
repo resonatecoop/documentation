@@ -505,12 +505,12 @@ ${content}`,
               },
               {
                 label: 'Forum',
-                href: 'https://community.resonate.is/',
+                href: 'https://community.resonate.coop/',
                 'aria-label': 'Browse the Discourse Forum',
               },
               {
                 label: 'Handbook',
-                href: 'https://community.resonate.is/docs',
+                href: 'https://community.resonate.coop/docs',
                 'aria-label': 'Read the Handbook and Guide',
               },
               {
