@@ -368,7 +368,7 @@ ${content}`,
           // Remove this to remove the "edit this page" links.
           editUrl: ({ docPath }) => {
             switch (true) {
-              case docPath.includes('stream'):
+              case docPath.includes('stream') && !docPath.includes('stream-app'):
                 return 'https://github.com/resonatecoop/stream/edit/development/README.md';
               case docPath.includes('website'):
                 return 'https://github.com/resonatecoop/website/edit/develop/README.md';
@@ -390,8 +390,10 @@ ${content}`,
                 return 'https://github.com/resonatecoop/image-process-queue/edit/main/README.md';
               case docPath.includes('beam'):
                 return 'https://github.com/simonv3/beam/edit/main/README.md';
+              case docPath.includes('mobile'):
+                return 'https://github.com/resonatecoop/mobile/edit/main/README.md';
               case docPath.includes('stream-app'):
-                return 'https://github.com/peterklingelhofer/beam/edit/stream-app/README.md';
+                return 'https://github.com/peterklingelhofer/stream-app/edit/main/README.md';
               default:
                 return `https://github.com/resonatecoop/documentation/edit/main/docs/${docPath}`;
             }
