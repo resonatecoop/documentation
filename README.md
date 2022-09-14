@@ -6,13 +6,13 @@ View the [GitHub Project Board](https://github.com/resonatecoop/documentation/pr
 
 ### Installation
 
-```
+```sh
 yarn
 ```
 
 ### Local Development
 
-```
+```sh
 yarn start
 ```
 
@@ -20,11 +20,16 @@ This command starts a local development server and opens up a browser window at 
 
 ### Build
 
-```
+```sh
 yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Serve
+```sh
+yarn serve
+```
 
 ### Deployment
 

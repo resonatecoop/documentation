@@ -285,7 +285,7 @@ ${content}`,
         "docusaurus-plugin-remote-content",
         {
           name: "beam",
-          sourceBaseUrl: "https://raw.githubusercontent.com/simonv3/beam/main/",
+          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/beam/main/",
           outDir: "docs/ecosystem",
           documents: ["README.md"],
           modifyContent(filename, content) {
@@ -297,7 +297,7 @@ sidebar_position: 1
 title: Beam
 ---
 
-Explore the <code>[beam](https://github.com/simonv3/beam)</code> desktop app repository...
+Explore the <code>[beam](https://github.com/resonatecoop/beam)</code> desktop app repository...
 
 ${content}`,
               }
@@ -389,7 +389,7 @@ ${content}`,
               case docPath.includes('image-process-queue'):
                 return 'https://github.com/resonatecoop/image-process-queue/edit/main/README.md';
               case docPath.includes('beam'):
-                return 'https://github.com/simonv3/beam/edit/main/README.md';
+                return 'https://github.com/resonatecoop/beam/edit/main/README.md';
               case docPath.includes('mobile'):
                 return 'https://github.com/resonatecoop/mobile/edit/main/README.md';
               case docPath.includes('stream-app'):
