@@ -1,6 +1,6 @@
 # Resonate Documentation
 
-> 🛠 **Status: Active Development**
+> 🛠 **Status: Active Development | Stable**
 >
 > This project is currently in development.
 
