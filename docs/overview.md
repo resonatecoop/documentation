@@ -6,7 +6,7 @@ sidebar_position: 1
 
 A high level overview of the Resonate tech stack.
 
-> Note: this is an "ideal" version of the stack. See the section "caveats" at the bottom for more explanation.
+> Note: the following are what is currently live on our servers, all of which are more or less considered to be in Maintenance Mode as we consolidate the server API into one repository: **[api](http://github.com/resonatecoop/api)**. See the section "caveats" at the bottom for more explanation.
 
 **[Resonate ID Server](https://github.com/resonatecoop/id)** - a golang server that acts as our "authentication" portal. It's primarily used to provide login and authentication for client apps, which includes the `stream` app (though this version isn't live for Resonate yet), the `dashboard`, and, for example `beam`, which is a third party app.
 
@@ -24,5 +24,4 @@ All of these use docker for container management, and are spun up and restarted 
 
 ## Caveats
 
-Resonate is currently in the middle of a transition from using WordPress as user management software.
-
+Resonate's API is undergoing a consolidation phase, pulling in functionality from multiple legacy repositories into one. The **[api](http://github.com/resonatecoop/api)** is experimental, and under very active development - expect things to change rapidly.
