@@ -1,5 +1,9 @@
 # Resonate Documentation
 
+> 🛠 **Status: Active Development**
+>
+> This project is currently in development.
+
 These docs are built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 View the [GitHub Project Board](https://github.com/resonatecoop/documentation/projects/2) to track work progress and management for this repository.
