@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Extend your skills and get involved with a flourishing open-source development
-        community and contribute to Resonate's growing technology ecosystem.
+        community and contribute to Resonate's growing technology active-development.
       </>
     ),
   },

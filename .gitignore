@@ -1,17 +1,19 @@
 # Remote repositories
-/docs/basics/id.md
-/docs/basics/stream.md
-/docs/basics/user-api-client.md
-/docs/basics/user-api.md
-/docs/basics/verifiable-credentials.md
-/docs/basics/website.md
-/docs/basics/search.md
-/docs/basics/upload.md
-/docs/basics/audio-process-queue.md
-/docs/basics/image-process-queue.md
-/docs/ecosystem/beam.md
-/docs/ecosystem/mobile.md
-/docs/ecosystem/stream-app.md
+/docs/active-development/api.md
+/docs/active-development/beam.md
+/docs/active-development/mobile.md
+/docs/active-development/documentation.md
+/docs/legacy/website.md
+/docs/legacy/id.md
+/docs/legacy/stream.md
+/docs/legacy/stream-app.md
+/docs/legacy/user-api-client.md
+/docs/legacy/user-api.md
+/docs/legacy/verifiable-credentials.md
+/docs/legacy/search.md
+/docs/legacy/upload.md
+/docs/legacy/audio-process-queue.md
+/docs/legacy/image-process-queue.md
 
 # Dependencies
 /node_modules

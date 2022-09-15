@@ -11,7 +11,7 @@ const config = {
   url: 'https://resonate.coop',
   baseUrl: '/',
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'log',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -32,18 +32,141 @@ const config = {
 
   plugins: [
     [
+      "docusaurus-plugin-remote-content",
+      {
+        name: "api",
+        sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/api/main/",
+        outDir: "docs/active-development",
+        documents: ["README.md"],
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+              filename: "api.md",
+              content: `---
+sidebar_position: 1
+title: API
+---
+
+Explore the <code>[api](https://github.com/resonatecoop/api)</code> repository...
+
+${content}`,
+            }
+          }
+          return undefined
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        name: "beam",
+        sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/beam/main/",
+        outDir: "docs/active-development",
+        documents: ["README.md"],
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+                filename: "beam.md",
+                content: `---
+sidebar_position: 2
+title: Beam
+---
+
+Explore the <code>[beam](https://github.com/resonatecoop/beam)</code> desktop app repository...
+
+${content}`,
+            }
+          }
+          return undefined
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        name: "mobile",
+        sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/mobile/main/",
+        outDir: "docs/active-development",
+        documents: ["README.md"],
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+              filename: "mobile.md",
+              content: `---
+sidebar_position: 3
+title: Mobile
+---
+
+Explore the mobile & tablet <code>[mobile](https://github.com/resonatecoop/mobile)</code> repository...
+${content}`,
+            }
+          }
+          return undefined
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        name: "documentation",
+        sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/documentation/main/",
+        outDir: "docs/active-development",
+        documents: ["README.md"],
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+              filename: "documentation.md",
+              content: `---
+sidebar_position: 4
+title: Documentation
+---
+
+Explore the <code>[documentation](https://github.com/resonatecoop/mobile)</code> repository...
+${content}`,
+            }
+          }
+          return undefined
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        name: "website",
+        sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/website/develop/",
+        outDir: "docs/legacy",
+        documents: ["README.md"],
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+              filename: "website.md",
+              content: `---
+sidebar_position: 1
+title: Website
+---
+
+Explore the Resonate <code>[website](https://github.com/resonatecoop/website)</code> repository...
+
+${content}`,
+            }
+          }
+          return undefined
+        },
+      },
+  ],
+    [
         "docusaurus-plugin-remote-content",
         {
           name: "stream",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/stream/development/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
               return {
                 filename: "stream.md",
                 content: `---
-sidebar_position: 1
+sidebar_position: 2
 title: Stream
 ---
 
@@ -59,41 +182,16 @@ ${content.replace('<!-- Standard -->', '').replace('stream2own', '')}`,
     [
         "docusaurus-plugin-remote-content",
         {
-          name: "website",
-          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/website/develop/",
-          outDir: "docs/basics",
-          documents: ["README.md"],
-          modifyContent(filename, content) {
-            if (filename.includes("README")) {
-              return {
-                filename: "website.md",
-                content: `---
-sidebar_position: 2
-title: Website
----
-
-Explore the Resonate <code>[website](https://github.com/resonatecoop/website)</code> repository...
-
-${content}`,
-              }
-            }
-            return undefined
-          },
-        },
-    ],
-    [
-        "docusaurus-plugin-remote-content",
-        {
           name: "id",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/id/develop/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
               return {
                 filename: "id.md",
                 content: `---
-sidebar_position: 4
+sidebar_position: 3
 title: ID Server
 ---
 
@@ -107,11 +205,36 @@ ${content}`,
         },
     ],
     [
+      "docusaurus-plugin-remote-content",
+      {
+        name: "stream-app",
+        sourceBaseUrl: "https://raw.githubusercontent.com/peterklingelhofer/stream-app/main/",
+        outDir: "docs/legacy",
+        documents: ["README.md"],
+        modifyContent(filename, content) {
+          if (filename.includes("README")) {
+            return {
+              filename: "stream-app.md",
+              content: `---
+sidebar_position: 4
+title: Stream App
+---
+
+Explore the mobile & tablet <code>[stream-app](https://github.com/peterklingelhofer/stream-app)</code> repository...
+
+${content}`,
+            }
+          }
+          return undefined
+        },
+      },
+    ],
+    [
         "docusaurus-plugin-remote-content",
         {
           name: "user-api",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/user-api/master/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
@@ -136,7 +259,7 @@ ${content}`,
         {
           name: "user-api-client",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/user-api-client/master/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
@@ -161,7 +284,7 @@ ${content}`,
         {
           name: "verifiable-credentials",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/verifiable-credentials/master/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["readme.md"],
           modifyContent(filename, content) {
             if (filename.includes("readme")) {
@@ -186,7 +309,7 @@ ${content}`,
         {
           name: "search",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/search/development/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
@@ -211,7 +334,7 @@ ${content.replace('## UI Design', '').replace('![alt text](./search.png "Search 
         {
           name: "upload",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/upload/main/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
@@ -236,7 +359,7 @@ ${content}`,
         {
           name: "audio-process-queue",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/audio-process-queue/main/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
@@ -261,7 +384,7 @@ ${content}`,
         {
           name: "image-process-queue",
           sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/image-process-queue/main/",
-          outDir: "docs/basics",
+          outDir: "docs/legacy",
           documents: ["README.md"],
           modifyContent(filename, content) {
             if (filename.includes("README")) {
@@ -281,80 +404,6 @@ ${content}`,
           },
         },
     ],
-    [
-        "docusaurus-plugin-remote-content",
-        {
-          name: "beam",
-          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/beam/main/",
-          outDir: "docs/ecosystem",
-          documents: ["README.md"],
-          modifyContent(filename, content) {
-            if (filename.includes("README")) {
-              return {
-                  filename: "beam.md",
-                  content: `---
-sidebar_position: 1
-title: Beam
----
-
-Explore the <code>[beam](https://github.com/resonatecoop/beam)</code> desktop app repository...
-
-${content}`,
-              }
-            }
-            return undefined
-          },
-        },
-    ],
-    [
-        "docusaurus-plugin-remote-content",
-        {
-          name: "mobile",
-          sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/mobile/main/",
-          outDir: "docs/ecosystem",
-          documents: ["README.md"],
-          modifyContent(filename, content) {
-            if (filename.includes("README")) {
-              return {
-                filename: "mobile.md",
-                content: `---
-sidebar_position: 2
-title: Mobile
----
-
-Explore the mobile & tablet <code>[mobile](https://github.com/resonatecoop/mobile)</code> repository...
-${content}`,
-              }
-            }
-            return undefined
-          },
-        },
-      ],
-    [
-        "docusaurus-plugin-remote-content",
-        {
-          name: "stream-app",
-          sourceBaseUrl: "https://raw.githubusercontent.com/peterklingelhofer/stream-app/main/",
-          outDir: "docs/ecosystem",
-          documents: ["README.md"],
-          modifyContent(filename, content) {
-            if (filename.includes("README")) {
-              return {
-                filename: "stream-app.md",
-                content: `---
-sidebar_position: 3
-title: Stream App
----
-
-Explore the mobile & tablet <code>[stream-app](https://github.com/peterklingelhofer/stream-app)</code> repository...
-
-${content}`,
-              }
-            }
-            return undefined
-          },
-        },
-      ],
   ],
 
   presets: [
@@ -392,6 +441,10 @@ ${content}`,
                 return 'https://github.com/resonatecoop/beam/edit/main/README.md';
               case docPath.includes('mobile'):
                 return 'https://github.com/resonatecoop/mobile/edit/main/README.md';
+              case docPath.includes('api'):
+                return 'https://github.com/resonatecoop/api/edit/main/README.md';
+              case docPath.includes('documentation'):
+                  return 'https://github.com/resonatecoop/documentation/edit/main/README.md';
               case docPath.includes('stream-app'):
                 return 'https://github.com/peterklingelhofer/stream-app/edit/main/README.md';
               default:
@@ -468,17 +521,17 @@ ${content}`,
                 to: '/docs/intro',
               },
               {
-                label: 'Basics',
-                to: '/docs/category/tutorial---basics',
+                label: 'Active Development',
+                to: '/docs/category/tutorial---active-development',
               },
               {
-                label: 'Ecosystem',
-                to: '/docs/category/tutorial---ecosystem',
+                label: 'Legacy',
+                to: '/docs/category/tutorial---active-development',
               },
             ],
           },
           {
-            title: 'API',
+            title: 'Legacy API',
             items: [
               {
                 label: 'API 3.0',

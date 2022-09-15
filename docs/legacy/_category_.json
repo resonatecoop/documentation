@@ -1,0 +1,8 @@
+{
+  "label": "Tutorial - Legacy",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "An overview of legacy components of Resonate's core tech stack that are no longer under active development."
+  }
+}
