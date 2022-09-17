@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-Let's discover **Resonate development in less than 5 minutes**.
+Let's discover **Resonate in less than 5 minutes**.
 
 ## Getting Started
 
