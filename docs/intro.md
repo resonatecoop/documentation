@@ -17,8 +17,8 @@ Get started by getting our [music streaming player](https://github.com/resonatec
 - A code editor:
   - [VSCode](https://code.visualstudio.com/) is a well-maintained, free option.
 
-### Start up Beam
+### Clone repository
 
-Head over to the [Beam documentation](/docs/active-development/beam) to finalize getting your development environment underway and get situated to contribute.
+Head over to the [Beam documentation](/docs/active-development/beam) to clone and finalize getting your development environment underway.
 
-Or, continue on to the [Overview](/docs/overview) if you'd like to learn more about the big picture view for Resonate before diving in to development. ⤵️
+Or alternatively, continue on to the [Overview](/docs/overview) section if you'd like to learn more about the big picture view for Resonate before diving in to development. ⤵️
