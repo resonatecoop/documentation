@@ -18,7 +18,7 @@ The simplest way to get started is by getting our [music streaming player](https
   - [VSCode](https://code.visualstudio.com/) is a well-maintained, free option.
 
 ### Git workflow
-If this is your first time contributing, you should fork the repository, and then clone your fork. Otherwise, simply clone the repository you want to work on:
+If you are not yet a member of the Resonate team on GitHub, you should fork the repository you want to work on. And then clone your fork. Otherwise, simply clone the repository you want to work on:
 ```sh
 git clone <the repo you want to clone . git>
 git checkout -b <new branch name>
