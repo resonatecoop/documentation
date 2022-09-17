@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "An overview of legacy components of Resonate's core tech stack that are no longer under active development. Note that additional documentation pertaining to Legacy APIs are located in the footer."
+    "description": "An overview of legacy components of Resonate's core tech stack that are no longer under active development. Note that additional documentation pertaining to Legacy APIs is located in the footer."
   }
 }
