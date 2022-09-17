@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Overview
 
-A high level overview of the Resonate tech stack. The [What does a professional DSP look like](https://community.resonate.coop/t/resonate-what-does-a-professional-dsp-look-like/2837) page provides a tentative roadmap of our long-term goals. To gain a better understanding of our immediate goals and tasks, check out our [Public Product Backlog](https://mattermost.resonate.coop/plugins/focalboard/workspace/gr3aqjbmw3d7fp3wukfw7hhppr/shared/bzkz3bnxxsbny3doh9aqhqy8cth/vzfpkzytdq3rkfjjwzagshoyrho?r=kwx8xtyxwcpmqsnh67iz8x74p7a).
+A high level overview of the Resonate tech stack. [What does a professional DSP look like](https://community.resonate.coop/t/resonate-what-does-a-professional-dsp-look-like/2837) provides a tentative roadmap of our long-term goals. To gain a better understanding of our immediate goals and tasks, check out our [Public Product Backlog](https://mattermost.resonate.coop/plugins/focalboard/workspace/gr3aqjbmw3d7fp3wukfw7hhppr/shared/bzkz3bnxxsbny3doh9aqhqy8cth/vzfpkzytdq3rkfjjwzagshoyrho?r=kwx8xtyxwcpmqsnh67iz8x74p7a).
 
 In September of 2022, Resonate [set a new goal](https://community.resonate.coop/t/dev-decisions-log/3136): to create a functional development environment and to [simplify the entire tech stack](https://mattermost.resonate.coop/boards/workspace/gr3aqjbmw3d7fp3wukfw7hhppr/bzkz3bnxxsbny3doh9aqhqy8cth/vzfpkzytdq3rkfjjwzagshoyrho/cnxsmedm3p7n8mff6dbda8q5i5y). This is to prepare Resonate to meet the needs of the [DSP Product Development Plan](https://mattermost.resonate.coop/boards/workspace/gr3aqjbmw3d7fp3wukfw7hhppr/bzkz3bnxxsbny3doh9aqhqy8cth/vzfpkzytdq3rkfjjwzagshoyrho/ce533e4ndgjnxxr9xgjri3e9x6y).
 
