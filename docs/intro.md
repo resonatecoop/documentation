@@ -21,4 +21,4 @@ Get started by getting our [music streaming player](https://github.com/resonatec
 
 Head over to the [Beam documentation](/docs/active-development/beam) to clone and finalize getting your development environment underway.
 
-Or alternatively, continue on to the [Overview](/docs/overview) section if you'd like to learn more about the big picture view for Resonate before diving in to development. ⤵️
+Or alternatively, continue on to the [Overview](/docs/overview) if you'd like to learn more about the big picture view for Resonate before diving into development. ⤵️
