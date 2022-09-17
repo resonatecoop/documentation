@@ -18,7 +18,7 @@ Resonate's API is undergoing a consolidation phase, pulling in functionality fro
 
 That being said, some of this work can occur in parallel. For volunteers looking to get their toes wet or to tackle a quick issue, helping out with our actively maintained front-end clients (**[beam](https://github.com/resonatecoop/beam)** and **[mobile](https://github.com/resonatecoop/mobile)**) would be massively helpful. Check out the [Beam Project Board](https://github.com/resonatecoop/beam/projects/1) or the [Mobile Project Board](https://github.com/resonatecoop/mobile/projects/1) to get a better idea of prioritization. If you're a volunteer feeling rather ambitious, check out the [API Project Board](https://github.com/orgs/resonatecoop/projects/11) for an idea of issue/task prioritization for the back-end.
 
-See something in this documentation that could be improved or is out-of-date? Click the **Edit this page** button at the bottom of any page on this website to submit a correction/improvement, or alternatively create an issue on the **[documentation](https://github.com/resonatecoop/documentation)** repository.
+See something in this documentation that could be improved or is out-of-date? Click the **Edit this page** link at the bottom of any page on this website to submit a correction/improvement, or alternatively create an issue on the **[documentation](https://github.com/resonatecoop/documentation)** repository.
 
 ### Legacy Assets on Live Servers
 
