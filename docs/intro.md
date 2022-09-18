@@ -59,4 +59,4 @@ git pull upstream main
 
 Head over to the [Beam documentation](/docs/active-development/beam) to clone and finalize getting your development environment underway.
 
-Or alternatively, continue on to the [Overview](/docs/overview) if you'd like to learn more about the big picture view for Resonate before diving into development. ⤵️
+Or alternatively, continue on to the [Overview](/docs/overview) if you'd like to learn more about the big picture view for Resonate before diving into development.
