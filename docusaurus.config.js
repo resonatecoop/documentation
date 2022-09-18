@@ -99,7 +99,7 @@ sidebar_position: 2
 title: Beam
 ---
 
-Explore the <code>[beam](https://github.com/resonatecoop/beam)</code> desktop app repository...
+Explore the <code>[beam](https://github.com/resonatecoop/beam)</code> desktop/web app repository...
 
 ${content}`,
             }
