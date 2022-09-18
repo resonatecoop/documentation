@@ -34,6 +34,33 @@ const config = {
     [
       "docusaurus-plugin-remote-content",
       {
+        name: "example-api-calls",
+        sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/beam/main/src/services/",
+        outDir: "docs",
+        documents: ["Api.ts"],
+        modifyContent(filename, content) {
+          if (filename.includes("Api")) {
+            return {
+              filename: "example-api-calls.md",
+              content: `---
+sidebar_position: 2
+title: Example API Calls
+---
+
+Explore sample client API calls, illustrated by the <code>[beam](https://github.com/resonatecoop/beam)</code> repository's <code>[Api.ts](https://github.com/resonatecoop/beam/blob/main/src/services/Api.ts)</code> file...
+\`\`\`ts
+${content}
+\`\`\`
+`,
+            }
+          }
+          return undefined
+        },
+      },
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
         name: "api",
         sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/api/main/",
         outDir: "docs/active-development",
@@ -441,6 +468,8 @@ ${content}`,
                 return 'https://github.com/resonatecoop/beam/edit/main/README.md';
               case docPath.includes('mobile'):
                 return 'https://github.com/resonatecoop/mobile/edit/main/README.md';
+              case docPath.includes('example-api-calls'):
+                return 'https://github.com/resonatecoop/beam/edit/main/src/services/Api.ts';
               case docPath.includes('api'):
                 return 'https://github.com/resonatecoop/api/edit/main/README.md';
               case docPath.includes('documentation'):
@@ -484,25 +513,6 @@ ${content}`,
             label: 'Documentation',
             'aria-label': `Documentation for Resonate's tech stack`,
           },
-          // // Hiding Legacy APIs from header
-          // {
-          //   href: 'https://api.resonate.coop/v3/docs',
-          //   label: 'API 3.0',
-          //   position: 'right',
-          //   'aria-label': 'API version 3.0 documentation',
-          // },
-          // {
-          //   href: 'https://api.resonate.coop/v2/docs',
-          //   label: 'API 2.0',
-          //   position: 'right',
-          //   'aria-label': 'API version 2.0 documentation',
-          // },
-          // {
-          //   href: 'https://api.resonate.ninja',
-          //   label: 'User API',
-          //   position: 'right',
-          //   'aria-label': 'User API documentation',
-          // },
           {
             href: 'https://github.com/resonatecoop',
             position: 'right',
