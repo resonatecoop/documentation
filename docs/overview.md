@@ -22,7 +22,7 @@ See something in this documentation that could be improved or is out-of-date? Cl
 
 ### Legacy Assets on Live Servers
 
-**[Resonate ID Server](https://github.com/resonatecoop/id)** - a golang server that acts as our "authentication" portal. It's primarily used to provide login and authentication for client apps, which includes the `stream` app (though this version isn't live for Resonate yet), the `dashboard`, and, for example `beam`, which is a third party app.
+**[Resonate ID Server](https://github.com/resonatecoop/id)** - a Golang server that acts as our "authentication" portal. It's primarily used to provide login and authentication for client apps, which includes the `stream` app, the `dashboard`, and, for example `beam`.
 
 **[Resonate User API](https://github.com/resonatecoop/user-api)** - this is primarily a database that stores all the user information and has some user management methods and functionality associated with it. It also is a golang server.
 
