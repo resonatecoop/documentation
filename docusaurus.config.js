@@ -235,7 +235,7 @@ ${content}`,
       "docusaurus-plugin-remote-content",
       {
         name: "stream-app",
-        sourceBaseUrl: "https://raw.githubusercontent.com/peterklingelhofer/stream-app/main/",
+        sourceBaseUrl: "https://raw.githubusercontent.com/resonatecoop/stream-app/main/",
         outDir: "docs/legacy",
         documents: ["README.md"],
         modifyContent(filename, content) {
@@ -247,7 +247,7 @@ sidebar_position: 4
 title: Stream App
 ---
 
-Explore the mobile & tablet <code>[stream-app](https://github.com/peterklingelhofer/stream-app)</code> repository...
+Explore the mobile & tablet <code>[stream-app](https://github.com/resonatecoop/stream-app)</code> repository...
 
 ${content}`,
             }
@@ -475,7 +475,7 @@ ${content}`,
               case docPath.includes('documentation'):
                   return 'https://github.com/resonatecoop/documentation/edit/main/README.md';
               case docPath.includes('stream-app'):
-                return 'https://github.com/peterklingelhofer/stream-app/edit/main/README.md';
+                return 'https://github.com/resonatecoop/stream-app/edit/main/README.md';
               default:
                 return `https://github.com/resonatecoop/documentation/edit/main/docs/${docPath}`;
             }
