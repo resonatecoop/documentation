@@ -99,7 +99,7 @@ sidebar_position: 2
 title: Beam
 ---
 
-Explore the <code>[beam](https://github.com/resonatecoop/beam)</code> desktop app repository...
+Explore the <code>[beam](https://github.com/resonatecoop/beam)</code> desktop/web app repository...
 
 ${content}`,
             }
@@ -507,17 +507,24 @@ ${content}`,
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Documentation',
             'aria-label': `Documentation for Resonate's tech stack`,
+            docId: 'intro',
+            label: 'Documentation',
+            position: 'left',
+            type: 'doc',
           },
           {
+            'aria-label': `Development API`,
+            docId: 'api',
+            href: 'https://dev.resonate.coop/docs',
+            label: 'API',
+            position: 'left',
+          },
+          {
+            'aria-label': 'GitHub repositories',
+            className: 'header-github-link',
             href: 'https://github.com/resonatecoop',
             position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repositories',
           },
         ],
       },
@@ -542,22 +549,17 @@ ${content}`,
             ],
           },
           {
-            title: 'Legacy API',
+            title: 'APIs',
             items: [
+              {
+                label: 'API 4.0',
+                href: 'https://dev.resonate.coop/docs',
+                'aria-label': 'API version 4.0 documentation',
+              },
               {
                 label: 'API 3.0',
                 href: 'https://api.resonate.coop/v3/docs',
                 'aria-label': 'API version 3.0 documentation',
-              },
-              {
-                label: 'API 2.0',
-                href: 'https://api.resonate.coop/v2/docs',
-                'aria-label': 'API version 2.0 documentation',
-              },
-              {
-                label: 'User API',
-                href: 'https://api.resonate.ninja',
-                'aria-label': 'User API documentation',
               },
             ],
           },
